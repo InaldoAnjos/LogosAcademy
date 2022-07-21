@@ -1,0 +1,31 @@
+{
+  "name": "aula-revisao",
+  "version": "1.0.0",
+  "description": "Aula de Revisão dia 20/07 com Gregório",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/InaldoAnjos/LogosAcademy.git"
+  },
+  "keywords": [
+    "revisão",
+    "JSON",
+    "Postman"
+  ],
+  "author": "Inaldo Junior",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/InaldoAnjos/LogosAcademy/issues"
+  },
+  "homepage": "https://github.com/InaldoAnjos/LogosAcademy#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
