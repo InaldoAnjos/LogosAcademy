@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+section{
+    display: flex;
+    background: linear-gradient(to left, rgba(255,255,255,1), rgba(255,255,255,0.3)), url(/portfolio/challenge-dev-full/imgs/close-up-image-of-programer-working-at-his-desk-in-office.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width: 100vw;
+    height: 40vh;
+}

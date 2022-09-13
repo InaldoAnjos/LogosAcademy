@@ -1,0 +1,121 @@
+body{
+    background-color: #f1f1f3;
+    margin: 0px;
+    
+    font-family: 'Dosis', sans-serif;
+}
+
+h1, h2, p{
+    margin: 0px;
+}
+
+#page{
+    margin: 30px;
+}
+
+#join{
+    background-color: #FEFEFE;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-bottom: 40px;
+}
+
+#one h1{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #51BEC1;
+    margin-bottom: 20px;
+}
+
+#one h2{
+    font-size: 1.5rem;
+    color: #C0DF39;
+    margin-bottom: 15px;
+}
+
+#one p{
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 30px;
+    color: #5c5c5c;
+}
+
+#price{
+    width: 50%;
+    background-color: #33B6B1;
+    border-bottom-left-radius: 10px;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-bottom: 40px;
+    color: #f1f1f3;
+}
+
+#price h2{
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+#value{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+
+#price p span{
+    font-size: 20px;
+    font-weight: 100;
+    margin-left: 15px;
+}
+
+button{
+    margin-top: 20px;
+    border: 0px;
+    width: 200px;
+    height: 40px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 0.5em gray;
+    color: #f1f1f3;
+    font-weight: 600;
+}
+
+button:hover{
+    border-radius: 4px;
+    background-color:#FEFEFE;
+    color: #C0DF39;
+    font-weight: 600;
+}
+
+#why_us{
+    width: 50%;
+    background-color: #51BEC1;
+    border-bottom-right-radius: 10px;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-bottom: 40px;
+    color: #f1f1f3;
+}
+
+#why_us h2{
+    font-size: 1.2rem;
+}
+
+#why_us ul{
+    font-size: 15px;
+    line-height: 20px;
+    list-style: none;
+    padding-left: 0px;
+}
+
+#block_two{
+    display: flex;
+}
+
+button{
+    background-color: #C0DF39;
+}

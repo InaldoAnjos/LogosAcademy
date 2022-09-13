@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body::before{
+    content: ''; /*Criar um conteúdo a ser preenchido*/
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.1) 100%),
+     url('/projetoIntegrador\(dbseller\)/assets/background-house.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 850px;
+
+    position: absolute; /*Só com o position absolute ele deixa o elemento por cima de tudo*/
+    top: 0; 
+    z-index: -1; /*Com a propriedade position ele destrava a propriedade z-index, que posiciona
+                    para frente, para trás o elemento*/
+}
+
+body, input, select, a, button{
+    font-family: 'Rajdhani', sans-serif;
+}
+
+body{    
+    height: 100vh;
+
+}
+
+.section-one header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    margin: 2rem auto;
+    height: 5rem;
+    width: 80vw;
+    
+    background: rgba(255, 255, 255, 0.17);
+    border-radius: 6px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.9px);
+    border: 1px solid rgba(255, 255, 255, 0.13);
+}
+
+.section-one header a img{
+    width: 10rem;
+    position: relative;
+    top: 0.75rem;
+}
+
+.section-one header nav ul{
+    display: flex;
+    gap: 1rem;
+
+    font-size: 1.1rem;
+}
+
+.section-one header nav ul li a{
+    font-weight: 500;
+    color: rgb(33, 36, 36, 0.8);
+}
+
+.section-one header nav ul li a:hover,
+.section-one header nav ul li a span:hover{
+    font-weight: 600;
+}
+
+.section-one header nav ul li a span{
+    font-weight: 500;
+    color: rgb(241, 84, 39, 0.8);
+}
+
+.search-section{
+    display: flex;
+    flex-direction: column;
+
+    margin: 20rem auto;
+    height: 10rem;
+    width: 60vw;
+
+    background: rgba(255, 255, 255, 0.17);
+    border-radius: 6px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.9px);
+    border: 1px solid rgba(255, 255, 255, 0.13);
+}
+
+.search-section .main-buttons{
+    display: flex;
+    justify-content: flex-start;
+    margin: 1rem auto 1rem 12.3rem;
+    gap: 30px;
+}
+
+.search-section .main-buttons button{
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 8px 32px;
+    color: rgb(33, 36, 36, 0.9);
+    text-decoration: none;
+    background-color: #ffffffee;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.search-section .main-buttons button:hover{
+    background-color: #f17025;
+    border: none;
+    font-weight: 600;
+    transition: 0.25s;
+}
+
+.search-section select{
+    appearance: none;
+    -webkit-appearance: none;
+
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #2c2a2a;
+    padding: 10px 30px 10px 10px;
+    border: none;
+    background-color: #ffffffee;
+    outline: none;
+    cursor: pointer;
+
+    background-image: url(assets/arrow.svg);
+    background-repeat: no-repeat;
+    background-position: right 10px top 50%;
+}
+
+.search-section select:hover{
+    background-color: #eeeeee;
+}
+
+.search-section input{
+    width: 80%;
+    border: none;
+    background-color: #ffffffee;
+    padding: 10px 30px;
+    outline: none;
+    caret-color: #2c2a2a;
+    color: #2c2a2a;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.2rem;
+}
+
+
+.search-section form{
+    width: 65%;
+    margin: 0 auto;
+
+    border: 2px solid transparent;
+    border-image: linear-gradient(45deg, #fff, #f17025);
+    border-image-slice: 1;
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-section form button{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(33, 36, 36, 0.9);
+
+    border: none;
+    background-color: #f17025;
+    width: 10.87rem;
+    height: 3rem;
+    border-left: 2px solid #ee874c;
+}
+
+.search-section form button:hover{
+    background-color: #ffffffee;
+    color: #f17025;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+main{
+    position: relative;
+    top: -70px;
+    background-color: #e9e6e6;
+}
+
+main h1{
+    position: relative;
+    top: 1rem;
+    margin: 0 auto 0 12.3rem;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #2c2a2a;
+}
+
+.content-recommended{
+    position: relative;
+    top: -18rem;
+    display: flex;
+    gap: 10px;
+
+    align-items: center;
+    justify-content: space-evenly;
+
+    margin: 20rem auto;
+    height: 10rem;
+    width: 80vw;
+
+    background: rgba(255, 255, 255, 0.17);
+    border-radius: 6px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.9px);
+    border: 1px solid rgba(255, 255, 255, 0.13);
+}
+
+.premium-content{
+    height: 90%;
+    width: 18%;
+
+    background: rgba(255, 255, 255, 0.17);
+    border-radius: 6px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.9px);
+    border: 1px solid rgba(255, 255, 255, 0.13);
+    cursor: pointer;
+}
+
+.premium-content:hover{
+    transform: scale(1.05);
+    transition: all 0.75s;
+}
+
+.premium-content:first-child{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('/projetoIntegrador\(dbseller\)/assets/casa.jpg');
+
+}
+
+.premium-content:nth-child(2){
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('/projetoIntegrador\(dbseller\)/assets/apartamento.jpg');
+}
+
+.premium-content:nth-child(3){
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('/projetoIntegrador\(dbseller\)/assets/loft.jpg');
+}
+
+.premium-content:nth-child(4){
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('/projetoIntegrador\(dbseller\)/assets/salacomercial.jpg');
+}
+
+.premium-content:nth-child(5){
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('/projetoIntegrador\(dbseller\)/assets/fazenda.jpg');
+}

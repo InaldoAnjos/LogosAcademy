@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, a{
+    font-family: 'Poppins', sans-serif;
+    background: #141414;
+    color: #FFFFFF;
+}
+
+header{
+    width: 100%;
+    display: flex;
+}
+
+a,
+a:visited{
+    color: inherit;
+    text-decoration: none;
+}
+
+.logo{
+    margin-right: 50px;
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+
+    font-size: 14px;
+    font-weight: 200;
+}
+
+
+@media(min-width: 600px){
+    .container{
+        padding: 0 4%;
+    }
+}
